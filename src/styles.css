@@ -1,0 +1,139 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+.main-container {
+  background-color: #0a1529;
+  overflow: hidden;
+}
+
+.glow-text {
+  position: relative;
+  z-index: 1;
+  color: #60a5fa;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.6), 0 0 20px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.4), 0 0 40px rgba(59, 130, 246, 0.3);
+}
+
+.glow-text::after {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(30px);
+  z-index: -1;
+}
+
+.custom-card {
+  background-color: #0c1b36;
+  border: none;
+  border-radius: 15px;
+  max-width: 800px;
+  position: relative;
+}
+
+.custom-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: rgba(59, 130, 246, 0.2);
+  border-radius: 17px;
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.custom-textarea {
+  background-color: #0c1b36 !important;
+  border: 1px solid rgba(59, 130, 246, 0.3) !important;
+  color: white !important;
+  border-radius: 12px !important;
+  resize: none;
+  overflow: auto;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.custom-textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-textarea::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.custom-textarea::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+.custom-textarea::-webkit-scrollbar-track {
+  background: #0c1b36;
+  border-radius: 10px;
+}
+
+.custom-textarea::-webkit-scrollbar-corner {
+  background: #0c1b36;
+}
+
+.custom-range {
+  width: 200px;
+}
+
+.custom-range::-webkit-slider-thumb {
+  background: #3b82f6;
+}
+
+.custom-range::-moz-range-thumb {
+  background: #3b82f6;
+}
+
+.custom-btn {
+  background-color: #2563eb !important;
+  color: white !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  font-size: 1.1rem !important;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.7), 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+.custom-btn:hover {
+  background-color: #1d4ed8 !important;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.7);
+}
+
+.custom-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(59, 130, 246, 0.2);
+  filter: blur(15px);
+}
+
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center;
+  gap: 20px; /* Space between the icons */
+}
+
+.social-icons a {
+  color: white; /* Default icon color */
+  font-size: 1.8rem; /* Icon size */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Individual Hover Effects */
+.social-icons a:nth-child(1):hover { /* First icon - GitHub */
+  color: #4078c0; /* GitHub blue */
+  transform: scale(1.2);
+}
+
+.social-icons a:nth-child(2):hover { /* Second icon - Instagram */
+  color: #e4405f; /* Instagram pink */
+  transform: scale(1.2);
+}
+
+/* Add more icons as needed with nth-child styling */

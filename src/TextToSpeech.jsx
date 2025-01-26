@@ -29,6 +29,9 @@ export default function TextToSpeech() {
     window.speechSynthesis.speak(speech);
   }
 
+  // Get the current year dynamically
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="min-vh-100 text-center py-5 main-container">
       <div className="container">
@@ -71,7 +74,7 @@ export default function TextToSpeech() {
 
         <footer className="mt-5">
           <h2 className="text-white h4 glow-text">Debasish</h2>
-          <p className="text-white">© Debasish. All rights reserved</p>
+          <p className="text-white">© {currentYear}. All rights reserved</p>
 
           <div className="social-icons mt-4">
             <a href="https://github.com/ons999/" className="text-decoration-none mx-3">
